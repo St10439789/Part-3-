@@ -55,17 +55,19 @@ public class Task {
     }
    
     public void setTaskStatus() {
-        System.out.println("Select task status");
-        System.out.println("1. To Do");
-        System.out.println("2. Done");
-        System.out.println("3. Doing");
-        System.out.println("Enter your code");
-    
-      
-
+        
+        int option = 0;
+        
+        while(option !=3){
+            
+         option = Integer.parseInt(JOptionPane.showInputDialog("please state by selecting one of the options below\n" + "Option 1) add tasks\n" + "Option 2) Show Results\n" + "Option 3) Quit" ));
+        }
+            
+         
+        
 }
      }
-}
+
 
 
        

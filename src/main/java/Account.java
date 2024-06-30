@@ -14,7 +14,7 @@ public class Account {
     }
 
     public static String getUserInput(String message, String errorMessage, boolean isUsername) {
-        String input;
+        String input = " ";
         do {
             input = JOptionPane.showInputDialog(null, message);
             if (isUsername && !isValidUsername(input)) {
@@ -27,7 +27,7 @@ public class Account {
     }
 
     public static boolean isValidUsername(String username) {
-        return username.contains("_") && username.length() <= 5;
+        return username.contains("_") && username.length() < 5;
     }
 
     public static boolean checkPasswordComplexity(String password) {
